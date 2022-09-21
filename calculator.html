@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <body>
+        <div class="main">
+            <div class="container" style="margin: 100px 200px 0 200px">
+                <!-- Inputs -->
+                <p>1st number</p>
+                <input type="number" id="one">
+                <p>2nd number</p>
+                <input type="number" id="two">
+                <!-- Button -->
+                <br>
+                <br>
+                <button id="add" onClick={calculate()}>Calculate</button>
+                <!-- Result -->
+                <p>Result</p>
+                <input type="text" id="result">
+            </div>
+        </div>
+         <script>
+            var elementOne =document.getElementById('one');
+            var elementTwo =document.getElementById('two');
+           
+           function calculate(){
+             one = parseInt(elementOne.value)
+             two = parseInt(elementTwo.value)
+             document.getElementById('result').value = one + two;
+           }
+        </script>
+        </body>
+        </html>
